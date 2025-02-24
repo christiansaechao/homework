@@ -2,11 +2,23 @@ import { useState } from "react";
 import "./styles.scss";
 
 const SimpleNotesApp = () => {
+  // using useState in place of local storage
   const [notes, setNotes] = useState([]);
-  const [note, setNote] = useState("");
+  const [note, setNote] = useState(null);
+  const [isError, setIsError] = useState(false);
 
-  const removeNote = (noteToRemove) => {
-    setNotes(notes.filter((note) => note!== noteToRemove))
+  const removeNote = (noteIndex) => {
+    setNotes(notes.filter((_, index) => index !== noteIndex))
+  }
+
+  const addNote = () => {
+    if (!note) {
+      setIsError(true);
+      return; 
+    };
+
+    setIsError(false);
+    setNotes([...notes, note]); 
   }
 
   return (
@@ -20,16 +32,17 @@ const SimpleNotesApp = () => {
         rows="10"
         onChange={(e) => setNote(e.target.value)}
       ></textarea>
-      <div className="button" onClick={() => setNotes([...notes, note])}>
+      <div className="button" onClick={addNote}>
         Add Note
       </div>
+      {isError && <div className="error">Please enter a note in before submitting</div>}
       <div className="added-notes">
         {notes &&
           notes.map((note, index) => {
             return (
               <div key={index} className="note">
                 <h4>{note}</h4>
-                <div className="remove-button" onClick={() => removeNote(note)}>X</div>
+                <div className="remove-button" onClick={() => removeNote(index)}>X</div>
               </div>
             );
           })}
