@@ -66,3 +66,37 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.general-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  background-color: white; 
+  color: black;
+}
+
+.flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-around-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column; 
+}
+
+.flex-row {
+  flex-direction: row;
+}
