@@ -1,7 +1,8 @@
 import StyledCard from '../src/assignments/StyledCard';
 import SimpleNotesApp from './components/SimpleNotesApp';
-import PokeDex from './components/Pokedex';
+import PokedexPage from './components/Pokedex/index.jsx';
 import LocalStorage from './components/LocalStorage';
+import PokemonList from './components/PokemonList';
 import './App.css';
 
 const App = () => {
@@ -9,10 +10,11 @@ const App = () => {
     <>
       {/* <StyledCard /> */}
       {/* <SimpleNotesApp /> */}
-      <PokeDex />
+      {/* <PokedexPage /> */}
+      { <PokemonList />}
       {/* <LocalStorage /> */}
     </>
   )
 }
 
-export default App
+export default App;

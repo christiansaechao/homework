@@ -1,0 +1,51 @@
+.localStorage-container {
+  height: 600px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  padding: 40px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 10%;
+}
+
+.todo-app {
+  height: 90%;
+  width: 100%;
+  gap: 20px;
+}
+.todo-app .general-input {
+  border-radius: 5px;
+}
+.todo-app .add-task {
+  width: 100px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: 2px solid orange;
+  border-radius: 5px;
+}
+.btn:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
