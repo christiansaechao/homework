@@ -14,6 +14,7 @@ const Screen = ({name, id, weight, front_default, abilities}) => {
                 <div>
                     {abilities.map((ability, index) => <div key={index}>{ability.ability.name}</div>)}
                 </div>
+                <div className="more-info" >More Info</div>
             </>}
         </div>
     );

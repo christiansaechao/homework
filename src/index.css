@@ -100,3 +100,27 @@ button:focus-visible {
 .flex-row {
   flex-direction: row;
 }
+
+:root {
+  --red: #cc322a;
+  --yellow: #e6d596;
+  --dark-red: #642c34;
+  --light-red: #b45c64;
+  --light-blue: #a7b9d3;
+  --bg-color: #242424;
+
+  --radial-water: radial-gradient(circle, #539ae2, #2b6ba0);
+  --radial-electric:radial-gradient(circle, #e5c531, #b29825);
+  --radial-fire:radial-gradient(circle, #ea7a3c, #b25a2c);
+  --radial-ground:radial-gradient(circle, #b2a061, #8c7c4f);
+  --radial-normal:radial-gradient(circle, #aab09f, #7c8372);
+  --radial-grass: radial-gradient(circle at top left, #71C558, #327828);
+  --radial-fairy:radial-gradient(circle, #e5709b, #b4557a);
+  --radial-poison:radial-gradient(circle, #b468b7, #8a4e8e);
+  --radial-psychic:radial-gradient(circle, #e397d1, #b46aa5);
+  --radial-flying:radial-gradient(circle, #7da6de, #4f7bb0);
+  --radial-fighting: radial-gradient(circle, #cb5f48, #9b4735);
+  --radial-dragon:radial-gradient(circle, #6a7baf, #495a85);
+  --radial-ice:radial-gradient(circle, #70cbd4, #4c98a0);
+  --radial-rock:radial-gradient(circle, #cc9f4f, #a07b3c);
+}

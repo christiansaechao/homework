@@ -1,0 +1,106 @@
+.view-details-btn {
+    margin-bottom: 20px;
+}
+
+.card-container {
+    flex-wrap: wrap;
+    gap: 25px;
+
+    .pokemon-card {
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &.selected {
+            background: var(--red);
+        }
+    }
+}
+
+.details-container {
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .pokemon-card {
+        width: 200px;
+        height: 300px;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 5px 7px;
+        box-sizing: border-box;
+
+        &.grass, &.bug {
+            background: var(--radial-grass);
+        }
+
+        &.poison {
+            background: var(--radial-poison);
+        }
+
+        &.psychic {
+            background: var(--radial-psychic);
+        }
+
+        &.fairy {
+            background: var(--radial-fairy);
+        }
+
+        &.fighting {
+            background: var(--radial-fighting);
+        }
+
+        &.rock {
+            background: var(--radial-rock);
+        }
+
+        &.ghost {
+            background: var(--radial-ghost);
+        }
+
+        &.dragon {
+            background: var(--radial-dragon);
+        }
+
+        &.dark {
+            background: var(--radial-dark);
+        }
+
+        &.steel {
+            background: var(--radial-steel);
+        }
+
+        &.ice {
+            background: var(--radial-ice);
+        }
+
+        &.fire {
+            background: var(--radial-fire);
+        }
+
+        &.water {
+            background: var(--radial-water);
+        }
+
+        &.electric {
+            background: var(--radial-electric);
+        }
+
+        &.normal {
+            background: var(--radial-normal);
+        }
+
+        &.ground {
+            background: var(--radial-ground);
+        }
+
+        .title {
+
+            .name {
+                text-transform: capitalize;
+                margin-right: 10px;
+            }
+        }
+    }
+}
