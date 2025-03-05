@@ -7,7 +7,7 @@ const Details = ({pokemonDetailData}) => {
         <div className="details-container flex-center-center">{pokemonDetailData && pokemonDetailData.map((pokemon) => 
             <div className={`pokemon-card ${pokemon.types?.primary}`} key={pokemon.name}>
                 <div className="title flex-between-center"><span>{pokemon.id}</span> <span className="name">{pokemon.name}</span></div>
-                <div className="img-container"><img src={pokemon.img} alt={pokemon.name} /></div>
+                <div className="img-container flex-center-center"><img src={pokemon.img} alt={pokemon.name} /></div>
                 <div className="pokemon-abilities">Abilities: {pokemon.abilities}</div>
                 <div>
                     Types: {pokemon.types.primary}
